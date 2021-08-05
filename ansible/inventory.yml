@@ -1,0 +1,13 @@
+all:
+  children:
+    db_hosts:
+      hosts:
+        db:
+          ansible_host: 10.11.2.23
+          ansible_private_key_file: .vagrant/machines/db/virtualbox/private_key
+    ungrouped: {}
+    web_hosts:
+      hosts:
+        web:
+          ansible_host: 10.11.2.13
+          ansible_private_key_file: .vagrant/machines/web/virtualbox/private_key
