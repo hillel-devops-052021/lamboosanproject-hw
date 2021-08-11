@@ -2,7 +2,7 @@ version: "3.3"
 services:
  frontend:
    build: ./frontend
-   image: lamboosan/hillel-frontend:0.0.1
+   image: lamboosan/hillel-frontend:0.0.2
    ports:
      - "8080:80"
    networks:
@@ -10,7 +10,7 @@ services:
      
  backend:
      build: ./backend
-     image: lamboosan/hillel-backend:0.0.1
+     image: lamboosan/hillel-backend:0.0.2
      depends_on:
        - mongo
      environment:
