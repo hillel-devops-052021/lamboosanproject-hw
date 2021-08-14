@@ -1,0 +1,5 @@
+[web_hosts]
+web ansible_host=10.11.2.13 ansible_private_key_file=.vagrant/machines/web/virtualbox/private_key
+
+[db_hosts]
+db ansible_host=10.11.2.23 ansible_private_key_file=.vagrant/machines/db/virtualbox/private_key
