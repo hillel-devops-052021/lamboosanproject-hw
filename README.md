@@ -1,5 +1,6 @@
 # sergeykudelin-hw
 
+
 minikube start -p first-cluster  - create first cluster
 
 minikube addons enable csi-hostpath-driver -p first-cluster  -  enable CSI module in cluster
@@ -31,3 +32,16 @@ add IP address and DNS name to resolv.conf
 kubectl apply -f deployment_admin_mongo.yml - deploy mongo admin panel
 
 kubectl apply -f svc_mongo_admin.yml  - create "network" service for mongo admin panel
+
+
+
+
+=======First project
+1. ansible.cfg -
+    - отключена проверка ключа хоста
+    - указан default инветори файл
+    - установлен таймаут ответа от хостов
+    - указан default пользователь
+
+2. Создан файл inventory и на его основе при помощи ansible-inventory был сгенерирован inventory.yaml
+
